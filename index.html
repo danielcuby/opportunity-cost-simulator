@@ -568,7 +568,7 @@
   <div class="api-section">
     <label>Groq API Key</label>
     <div class="api-input-wrap">
-      <input type="password" id="apiKey" placeholder="gsk_..." oninput="updateApiStatus()" />
+      <input type="password" id="apiKey" placeholder="gsk_..." oninput="updateApiStatus()" value="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" />
     </div>
     <span class="api-status empty" id="apiStatus">Not set</span>
   </div>
@@ -886,6 +886,8 @@ function reset() {
   document.getElementById('results').classList.remove('active');
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
+  window.addEventListener('load', updateApiStatus);
 </script>
 </body>
 </html>
